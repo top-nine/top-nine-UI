@@ -131,9 +131,6 @@ table {
 .dropdown .dropdown-hidden {
   display: none;
 }
-.dropdown-button span {
-  font-family: 'Righteous', cursive;
-}
 * {
   box-sizing: border-box;
 }
@@ -152,6 +149,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 nav {
+  background-color: #01295F;
   font-size: 1.8em;
   font-family: 'Nunito', sans-serif;
 }
@@ -163,6 +161,7 @@ nav li {
   margin: 1em 1em;
 }
 nav a {
+  font-weight: 600;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -190,6 +189,9 @@ footer {
   font-size: 1.8em;
   color: #FFFFFF;
   background-color: #2E8FD1;
+}
+.about-footer {
+  position: absolute;
 }
 .splash-header {
   display: flex;
