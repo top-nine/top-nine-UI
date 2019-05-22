@@ -7,20 +7,27 @@
 
   <title>MyTop9</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Nunito&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
+    <script defer="defer" src="./components/Dropdown.js"></script>
+
     <div class="container">
-        <nav>
+        <nav class="dropdown">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login / Sign Up</a></li>
-                <li><i class="fab fa-github icon"></i></li>
-                <li><i class="fab fa-facebook icon"></i></li>
-                <li><i class="fab fa-twitter icon"></i></li>
+                <li><i class="fas fa-th icon dropdown-button"><span>MyTop9</span></i></li>
+                <ul class="dropdown-content">
+                    <li class="mid-l"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="mid-r"><a href="#">Login / Sign Up</a></li>
+                    <li><a href="#"><i class="fab fa-github icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                </ul>
             </ul>
         </nav>
         <div class="splash-header">
@@ -31,6 +38,7 @@
                     a website that lets users select their Top-Nine in a variety of categories
                     (sports, video games, makeup, movies, etc..)
                 </p>
+                <button> Get Started </button>
         </div>
     </div>
     <div class="content-section">
