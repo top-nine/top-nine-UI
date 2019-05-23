@@ -135,21 +135,88 @@ table {
   box-sizing: border-box;
 }
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 body {
+  height: 100%;
   width: 100%;
 }
 .container {
-  background: #01295F;
+  background: #1c2938;
   text-align: center;
   width: 100%;
+}
+h1 {
+  font-size: 2.5em;
+}
+h1,
+h2 {
+  font-family: 'Nunito', sans-serif;
+}
+h2 {
+  font-size: 1.8em;
 }
 p {
   font-family: 'Montserrat', sans-serif;
 }
+.about-content {
+  color: #FFFFFF;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, #1c2938, #2E8FD1);
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.about-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 2em 0;
+  font-size: 4em;
+  font-weight: 600;
+}
+.about-content p {
+  color: white;
+  font-size: 1.8em;
+}
+.about-content .card {
+  height: 400px;
+  width: 300px;
+  border: solid 1px black;
+  box-shadow: 1px 4px grey;
+}
+.about-content .card .card-image img {
+  height: 60%;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+.about-content .card .card-content h2 {
+  text-align: center;
+}
+.about-content .carousel {
+  width: 60rem;
+}
+.about-content .carousel img {
+  border-radius: 8px;
+}
+.about-content .carousel-caption {
+  border: 3px white solid;
+  border-radius: 8px;
+  margin-top: 7em;
+  color: black;
+  position: relative;
+  left: auto;
+  right: auto;
+}
+.about-content .carousel-caption h2 {
+  margin-bottom: 0.5em;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+}
 nav {
-  background-color: #01295F;
+  background-color: #1c2938;
   font-size: 1.8em;
   font-family: 'Nunito', sans-serif;
 }
@@ -179,6 +246,12 @@ nav a {
   font-weight: 500;
   font-family: 'Righteous', cursive;
 }
+.about-nav a {
+  text-decoration: none;
+}
+.about-nav a:hover {
+  color: #FFFFFF;
+}
 footer {
   width: 100%;
   height: 3em;
@@ -191,7 +264,7 @@ footer {
   background-color: #2E8FD1;
 }
 .about-footer {
-  position: absolute;
+  background-color: #2e8fd1;
 }
 .splash-header {
   display: flex;
@@ -214,7 +287,7 @@ footer {
   font-size: 2.5em;
   border: solid #2E8FD1 3px;
   border-radius: 8px;
-  background-color: #01295F;
+  background-color: #1c2938;
   margin-top: 5em;
   width: 10em;
   height: 3em;
