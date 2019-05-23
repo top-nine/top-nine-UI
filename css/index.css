@@ -218,6 +218,11 @@ footer {
   margin-top: 5em;
   width: 10em;
   height: 3em;
+  transition: border-color ease 0.25s, background-color ease 0.25s;
+}
+.splash-header button:hover {
+  border-color: #FFFFFF;
+  background-color: #2E8FD1;
 }
 img {
   width: 600px;
