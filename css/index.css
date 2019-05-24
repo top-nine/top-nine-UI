@@ -186,6 +186,16 @@ section {
   padding: 2em 18em;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .about-content {
+    padding: 2em 12em;
+  }
+}
+@media (max-width: 600px) {
+  .about-content {
+    padding: 2em 6em;
+  }
+}
 .about-content p {
   font-size: 1.8em;
 }
@@ -220,7 +230,11 @@ section {
 }
 .about-content .carousel {
   display: none;
+  padding: 2%;
   width: 70rem;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 8px;
 }
 .about-content .carousel img {
   border-radius: 8px;
@@ -241,10 +255,13 @@ section {
 }
 .about-content .carousel-caption h2 {
   margin-bottom: 0.5em;
-  color: #FFFFFF;
+  color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   font-weight: 600;
+}
+.about-content .carousel-caption p {
+  text-align: center;
 }
 nav {
   background-color: #1c2938;
@@ -307,6 +324,7 @@ nav .navigation {
 footer {
   display: flex;
   width: 100%;
+  justify-content: center;
   height: 3em;
   bottom: 0;
   padding: 1em;
@@ -322,6 +340,11 @@ footer a {
 }
 .about-footer {
   background-color: #2e8fd1;
+}
+@media (max-width: 800px) {
+  .about-footer {
+    position: absolute;
+  }
 }
 .splash-header {
   display: flex;
@@ -349,7 +372,7 @@ footer a {
     line-height: 1.4;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .splash-header p {
     display: none;
   }
@@ -380,7 +403,7 @@ footer a {
   font-size: 2.5em;
 }
 .content-section img {
-  width: 16em;
+  width: 48%;
 }
 .content-section p {
   line-height: 1.6;
@@ -395,7 +418,6 @@ footer a {
   }
   .content-section img {
     width: 100%;
-    height: 80%;
   }
 }
 hr {

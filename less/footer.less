@@ -1,12 +1,15 @@
 footer{
     display: flex;
     width: 100%;
+    justify-content: center;
     height: 3em;
     bottom: 0;
     padding: 1em;
     font-size:@standard; 
     color: @white;
     background-color: @light-blue;
+
+   
     
     span{
         margin: 0 auto;
@@ -19,4 +22,7 @@ footer{
 
 .about-footer{
     background-color: rgb(46, 143, 209,0.2);
+    @media @tablet {
+        position:absolute;
+    }
 }
