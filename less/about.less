@@ -1,0 +1,94 @@
+#about{
+background-color: @dark-blue;
+display: flex;
+flex-direction: column;
+width: 100%;
+    h1{ 
+        text-align: center;
+        color: white;
+        font-family: @Mont;
+        margin:0.2em 0;
+        font-size:3em;
+        font-weight: 600;
+    }
+}
+
+.about-content{
+    color: @white;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 2em 18em;
+    align-items: center;
+
+
+    p{
+        font-size: @standard;
+    }
+    .card{
+        color: black;
+        margin: 1em;
+        height: 42em;
+        width: 30em;
+        background-color: gainsboro;
+        border-radius: 10px;
+        box-shadow: 8px 8px 16px lightslategrey;
+
+        @media @tablet {
+            display: none;
+        }
+
+        .card-image img{
+            width: 100%;
+            border-bottom:solid 1px black; 
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+
+        .card-content h2,p{
+            text-align: center;
+        }
+
+        h2{
+            font-family: @Mont;
+            margin-top:5%;
+            margin-bottom: 5%;
+            font-weight: 600;
+            font-size: 2.5em;
+        }
+    }
+
+    .carousel{
+        display: none;
+        width:70rem;
+        img{
+            border-radius: 8px;
+        }
+
+        @media @tablet {
+            display:flex;
+        }
+    }
+
+    .carousel-caption{
+        border: 3px white solid;
+        border-radius: 8px;
+        margin-top: 7em;
+        color:black;
+        position: relative;
+        left: auto;
+        right: auto;
+    
+        h2{
+            margin-bottom: 0.5em;
+            color: @white;
+            font-family: @Mont;
+            font-size: @large;
+            font-weight: 600;
+        }
+        
+    }
+}
+

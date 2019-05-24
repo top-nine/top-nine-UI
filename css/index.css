@@ -122,34 +122,163 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.dropdown {
+  z-index: 2;
+}
+.dropdown .dropdown-content {
+  width: 100%;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 body {
+  height: 100%;
   width: 100%;
 }
 .container {
-  background: #01295F;
   text-align: center;
   width: 100%;
 }
-nav ul {
-  display: flex;
-  justify-content: center;
+h1 {
+  font-size: 2.5em;
+}
+h1,
+h2 {
+  font-family: 'Nunito', sans-serif;
+}
+h2 {
   font-size: 1.8em;
 }
-nav ul li {
-  margin: 1% 0.5%;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
-nav ul li a {
+#about {
+  background-color: #1c2938;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#about h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 600;
+}
+.about-content {
+  color: #FFFFFF;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 2em 18em;
+  align-items: center;
+}
+.about-content p {
+  font-size: 1.8em;
+}
+.about-content .card {
+  color: black;
+  margin: 1em;
+  height: 42em;
+  width: 30em;
+  background-color: gainsboro;
+  border-radius: 10px;
+  box-shadow: 8px 8px 16px lightslategrey;
+}
+@media (max-width: 800px) {
+  .about-content .card {
+    display: none;
+  }
+}
+.about-content .card .card-image img {
+  width: 100%;
+  border-bottom: solid 1px black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.about-content .card .card-content h2,
+.about-content .card p {
+  text-align: center;
+}
+.about-content .card h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.about-content .carousel {
+  display: none;
+  width: 70rem;
+}
+.about-content .carousel img {
+  border-radius: 8px;
+}
+@media (max-width: 800px) {
+  .about-content .carousel {
+    display: flex;
+  }
+}
+.about-content .carousel-caption {
+  border: 3px white solid;
+  border-radius: 8px;
+  margin-top: 7em;
+  color: black;
+  position: relative;
+  left: auto;
+  right: auto;
+}
+.about-content .carousel-caption h2 {
+  margin-bottom: 0.5em;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+nav {
+  background-color: #1c2938;
+  font-size: 1.8em;
+  font-family: 'Nunito', sans-serif;
+}
+nav ul {
+  display: flex;
+  position: relative;
+}
+nav li {
+  margin: 1em 1em;
+}
+nav a {
+  font-weight: 600;
   text-decoration: none;
   color: #FFFFFF;
 }
-nav .icon {
-  font-size: 1.5em;
+.icon {
+  font-size: 1.8em;
+  color: #FFFFFF;
+}
+.mid-l {
+  margin-left: auto;
+}
+.mid-r {
+  margin-right: auto;
+}
+.dropdown-button span {
+  font-weight: 500;
+  font-family: 'Righteous', cursive;
+}
+.about-nav a {
+  text-decoration: none;
+}
+.about-nav a:hover {
   color: #FFFFFF;
 }
 footer {
@@ -163,35 +292,71 @@ footer {
   color: #FFFFFF;
   background-color: #2E8FD1;
 }
+.about-footer {
+  background-color: #2e8fd1;
+}
 .splash-header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  background-color: #1c2938;
   height: 900px;
   padding: 0em 12em 8em;
   color: #FFFFFF;
 }
+.splash-header #logo {
+  width: 50em;
+}
 .splash-header p {
+  line-height: 1.6;
   width: 75%;
   margin-top: 1em;
   font-size: 2.5em;
 }
-img {
-  width: 600px;
-  height: 400px;
+.splash-header button {
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  border: solid #2E8FD1 3px;
+  border-radius: 8px;
+  background-color: #1c2938;
+  margin-top: 5em;
+  width: 10em;
+  height: 3em;
+  transition: border-color ease 0.25s, background-color ease 0.25s;
+}
+.splash-header button:hover {
+  border-color: #FFFFFF;
+  background-color: #2E8FD1;
 }
 .content-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
+  padding: 1em 2em;
+  height: auto;
   background-color: #FFFFFF;
   font-size: 2.5em;
+}
+.content-section img {
+  width: 16em;
 }
 .content-section p {
   line-height: 1.6;
   width: 45%;
+}
+@media (max-width: 800px) {
+  .content-section {
+    flex-direction: column;
+  }
+  .content-section p {
+    width: 100%;
+  }
+  .content-section img {
+    width: 100%;
+    height: 80%;
+  }
 }
 hr {
   border: 0;
@@ -200,4 +365,9 @@ hr {
 }
 .reverse {
   flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .reverse {
+    flex-direction: column;
+  }
 }

@@ -1,22 +1,41 @@
 
 nav{
-    ul {
+    background-color: @dark-blue;
+    font-size: @standard;
+    font-family: @Nunito;
+    ul{
         display: flex;
-        justify-content: center;
-        font-size: @standard;
+        position: relative;
     }
-
-    ul li{
-        margin: 1% 0.5%;
+    li{
+        margin:1em 1em;
     }
-
-    ul li a{
+    a{
+        font-weight: 600;  
         text-decoration: none;
         color: @white;
     }
 
-    .icon{
-        font-size: 1.5em;
+}
+.icon{
+    font-size: @standard;
+    color: @white;
+}
+
+.mid-l{
+    margin-left:auto;
+}
+
+.mid-r{
+    margin-right:auto;
+}
+.dropdown-button span{
+    font-weight: 500;
+    font-family: @Righteous;
+}
+.about-nav a{
+    text-decoration: none;
+    &:hover{
         color: @white;
     }
 }
