@@ -220,7 +220,11 @@ section {
 }
 .about-content .carousel {
   display: none;
+  padding: 2%;
   width: 70rem;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 8px;
 }
 .about-content .carousel img {
   border-radius: 8px;
@@ -241,10 +245,13 @@ section {
 }
 .about-content .carousel-caption h2 {
   margin-bottom: 0.5em;
-  color: #FFFFFF;
+  color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   font-weight: 600;
+}
+.about-content .carousel-caption p {
+  text-align: center;
 }
 nav {
   background-color: #1c2938;
@@ -307,12 +314,18 @@ nav .navigation {
 footer {
   display: flex;
   width: 100%;
+  justify-content: center;
   height: 3em;
   bottom: 0;
   padding: 1em;
   font-size: 1.8em;
   color: #FFFFFF;
   background-color: #2E8FD1;
+}
+@media (max-width: 800px) {
+  footer {
+    position: absolute;
+  }
 }
 footer span {
   margin: 0 auto;
@@ -380,7 +393,7 @@ footer a {
   font-size: 2.5em;
 }
 .content-section img {
-  width: 16em;
+  width: 20em;
 }
 .content-section p {
   line-height: 1.6;
@@ -395,7 +408,6 @@ footer a {
   }
   .content-section img {
     width: 100%;
-    height: 80%;
   }
 }
 hr {

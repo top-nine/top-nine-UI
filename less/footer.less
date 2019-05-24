@@ -1,12 +1,17 @@
 footer{
     display: flex;
     width: 100%;
+    justify-content: center;
     height: 3em;
     bottom: 0;
     padding: 1em;
     font-size:@standard; 
     color: @white;
     background-color: @light-blue;
+
+    @media @tablet {
+        position:absolute;
+    }
     
     span{
         margin: 0 auto;
