@@ -16,22 +16,37 @@ nav{
         color: @white;
     }
 
+    .navigation{
+        margin-left: auto;
+    }
 }
+.nav{
+    padding: 0 1em;
+    @media @tablet {
+        display:none;
+    }
+}
+.dropdown{
+    display: none;
+    @media @tablet {
+        display: flex;
+    }
+}
+
 .icon{
     font-size: @standard;
     color: @white;
 }
 
-.mid-l{
-    margin-left:auto;
-}
-
-.mid-r{
-    margin-right:auto;
-}
 .dropdown-button span{
     font-weight: 500;
     font-family: @Righteous;
+}
+.about-nav{
+    display: inline; 
+    @media @tablet {
+        display: none;
+    }
 }
 .about-nav a{
     text-decoration: none;

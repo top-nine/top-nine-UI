@@ -8,15 +8,27 @@
     padding: 0em 12em 8em;
     color: @white;
 
+    
+
     #logo{
         width: 50em;
     }
 
     p {
+        text-align: center;
         line-height: 1.6;
         width:75%;
         margin-top: 1em;
         font-size: @large;
+
+        @media @tablet {
+            width: 100%;
+            line-height: 1.4;
+        }
+
+        @media @mobile {
+            display: none;
+        }
     }
 
     
@@ -24,10 +36,10 @@
         font-family: @Nunito;
         color: @white;
         font-size: @large;
-        border: solid @light-blue 3px;
+        border: solid @logo-blue 3px;
         border-radius: 8px;
         background-color: @dark-blue;
-        margin-top: 5em;
+        margin-top: 4em;
         width: 10em;
         height: 3em;
         transition: border-color ease .25s, background-color ease .25s;
